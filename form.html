@@ -3,10 +3,38 @@
   <head>
   </head>
   <body>
+    <form method="POST" action="http:localhost:3000/profile">
+      <div>
+        <label for="name">Name:</label>
+        <select id="name" name="name">
+          <option value="name">Name</option>
+        </select>
+      </div>
+      <div>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname">
+      </div>
+      <div>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname">
+      </div>
+      <div>
+        <label for="radio">Radio</label>
+        <input type="radio" id="radio" name="radio">
+      </div>
+      <div>
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+      </div>
+      <div>
+        <button type="submit">Submit Form</button>
+      </div>
+    </form>
     <header>
       <nav>
         <!-- works like <a href="/index.html">Home</a> -->
         <a href="/">Home</a>
+        <a href="./form.html">Form</a>
       </nav>
     </header>
     <main>
